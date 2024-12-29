@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="es">
+<import>
+	<category name="chat.acp.index">
+		<item name="chat.acp.index.system.software.chatVersion"><![CDATA[Versión de Tim’s Chat]]></item>
+	</category>
+
+	<category name="chat.acp.menu">
+		<item name="chat.acp.menu.link.chat"><![CDATA[Chat]]></item>
+		<item name="chat.acp.menu.link.command.trigger.add"><![CDATA[Añadir comando activador]]></item>
+		<item name="chat.acp.menu.link.command.trigger.list"><![CDATA[Comandos activadores]]></item>
+		<item name="chat.acp.menu.link.room.add"><![CDATA[Añadir sala de chat]]></item>
+		<item name="chat.acp.menu.link.room.list"><![CDATA[Salas de chat]]></item>
+		<item name="chat.acp.menu.link.suspension.list"><![CDATA[Suspensiones]]></item>
+	</category>
+
+	<category name="chat.acp.room">
+		<item name="chat.acp.room.list"><![CDATA[Salas de chat]]></item>
+		<item name="chat.acp.room.add"><![CDATA[Añadir sala de chat]]></item>
+		<item name="chat.acp.room.edit"><![CDATA[Editar sala de chat]]></item>
+		<item name="chat.acp.room.delete.sure"><![CDATA[¿Realmente quieres eliminar la sala de chat <strong>{$room}</strong>?]]></item>
+
+		<item name="chat.acp.room.topic"><![CDATA[Tema]]></item>
+		<item name="chat.acp.room.topic.error.tooLong"><![CDATA[El tema es demasiado largo.]]></item>
+		<item name="chat.acp.room.topicUseHtml"><![CDATA[Habilitar código HTML en el tema]]></item>
+		<item name="chat.acp.room.userLimit"><![CDATA[Límite de usuarios]]></item>
+	</category>
+
+	<category name="chat.acp.command">
+		<item name="chat.acp.command.className"><![CDATA[Nombre de clase PHP]]></item>
+		<item name="chat.acp.command.trigger"><![CDATA[Activador]]></item>
+		<item name="chat.acp.command.trigger.add"><![CDATA[Añadir activador]]></item>
+		<item name="chat.acp.command.trigger.className.error.notFound"><![CDATA[No se puede encontrar la clase especificada.]]></item>
+		<item name="chat.acp.command.trigger.commandTrigger.error.duplicate"><![CDATA[Este activador ya está en uso.]]></item>
+		<item name="chat.acp.command.trigger.commandTrigger.error.invalid"><![CDATA[Los activadores no deben contener espacios.]]></item>
+		<item name="chat.acp.command.trigger.delete.sure"><![CDATA[¿Realmente quieres eliminar el activador <span class="confirmationObject">/{$trigger->commandTrigger}</span>?]]></item>
+		<item name="chat.acp.command.trigger.edit"><![CDATA[Editar activador]]></item>
+		<item name="chat.acp.command.trigger.list"><![CDATA[Comandos activadores]]></item>
+	</category>
+
+	<category name="chat.acp.suspension">
+		<item name="chat.acp.suspension.list"><![CDATA[Suspensiones]]></item>
+		<item name="chat.acp.suspension.type"><![CDATA[Tipo]]></item>
+		<item name="chat.acp.suspension.type.be.bastelstu.chat.suspension.ban"><![CDATA[Baneo]]></item>
+		<item name="chat.acp.suspension.type.be.bastelstu.chat.suspension.mute"><![CDATA[Silencio]]></item>
+		<item name="chat.acp.suspension.username"><![CDATA[Nombre de usuario]]></item>
+		<item name="chat.acp.suspension.judge"><![CDATA[Juez]]></item>
+		<item name="chat.acp.suspension.room"><![CDATA[Sala de chat]]></item>
+		<item name="chat.acp.suspension.time"><![CDATA[Fecha]]></item>
+		<item name="chat.acp.suspension.expires"><![CDATA[Expiración]]></item>
+		<item name="chat.acp.suspension.expires.forever"><![CDATA[Nunca]]></item>
+		<item name="chat.acp.suspension.showExpired"><![CDATA[Mostrar suspensiones expiradas]]></item>
+		<item name="chat.acp.suspension.objectType.allTypes"><![CDATA[Todos los tipos de suspensiones]]></item>
+		<item name="chat.acp.suspension.room.all"><![CDATA[Todo]]></item>
+		<item name="chat.acp.suspension.room.global"><![CDATA[Suspensiones globales]]></item>
+		<item name="chat.acp.suspension.revoke"><![CDATA[Revocar]]></item>
+		<item name="chat.acp.suspension.revoke.sure"><![CDATA[¿Realmente quieres revocar <strong>{lang}chat.acp.suspension.type.{$suspension->getSuspensionType()->objectType}{/lang}</strong> de {$suspension->getUser()->username}?]]></item>
+		<item name="chat.acp.suspension.revoked"><![CDATA[Revocada anticipadamente por {$suspension->revoker}, {$suspension->revoked|plainTime}.]]></item>
+	</category>
+
+	<category name="chat.connection">
+		<item name="chat.connection.warning"><![CDATA[Parece que hay problemas con tu conexión al servidor o que el servidor se ha caído.]]></item>
+	</category>
+
+	<category name="chat.box">
+		<item name="chat.box.noRooms"><![CDATA[No hay salas de chat que coincidan con los criterios (por ejemplo, porque no hay nadie chateando en este momento). Utiliza la <a href="{link controller='RoomList' application='chat'}{/link}">vista general de salas</a> para entrar en una sala de chat.]]></item>
+	</category>
+
+	<category name="chat.error">
+		<item name="chat.error.datePast"><![CDATA[La fecha introducida es anterior.]]></item>
+		<item name="chat.error.back"><![CDATA[Salir del chat]]></item>
+		<item name="chat.error.hcf"><![CDATA[<p>El chat se ha cerrado por problemas persistentes de conexión u otro error grave{if $err.message}: {$err.message}{else}.{/if}</p>{if $err.exceptionID}<p>ID de excepción: <code>{$err.exceptionID}</code></p>{/if}]]></item>
+		<item name="chat.error.initialization"><![CDATA[<p>El chat no se ha podido inicializar correctamente{if $err.message}: {$err.message}{else}.{/if}</p>{if $err.exceptionID}<p>Exception ID: <code>{$err.exceptionID}</code></p>{/if}]]></item>
+		<item name="chat.error.invalidColor"><![CDATA[El color “{$color}” no es válido.]]></item>
+		<item name="chat.error.invalidParameters"><![CDATA[{if $data.result.offset >= $data.parameterString.length}Faltan parámetros en el comando introducido{else}Los parámetros del comando introducido no son válidos en “{$data.parameterString.substr($data.result.offset, 5)}”{/if}.]]></item>
+		<item name="chat.error.roomFull"><![CDATA[Se ha alcanzado el número máximo de usuarios.]]></item>
+		<item name="chat.error.suspension.noEffect"><![CDATA[Esta suspensión no tiene ningún efecto sobre este usuario.]]></item>
+		<item name="chat.error.suspension.remove.empty"><![CDATA[No hay suspensiones coincidentes.]]></item>
+		<item name="chat.error.notInTemproom"><![CDATA[Este comando debe utilizarse en una sala temporal.]]></item>
+		<item name="chat.error.triggerNotFound"><![CDATA[El comando “{$trigger}” no existe.]]></item>
+		<item name="chat.error.userIgnoresYou"><![CDATA[“{$user->username}” te tiene bloqueado.]]></item>
+		<item name="chat.error.userNotFound"><![CDATA[El nombre de usuario “{$username}” no existe.]]></item>
+	</category>
+
+	<category name="chat.log">
+		<item name="chat.log.title"><![CDATA[Registro del chat]]></item>
+		<item name="chat.log.date"><![CDATA[Fecha y hora]]></item>
+		<item name="chat.log.jumpToDate"><![CDATA[Ir a la fecha]]></item>
+	</category>
+
+	<category name="chat.messageType">
+		<item name="chat.messageType.information"><![CDATA[Información]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.away"><![CDATA[<span class="username">{@$author.coloredUsername}</span> está ausente{if $message.payload.message}: {@$message.payload.message}{/if}.]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.away.title"><![CDATA[Este usuario está ausente]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.back"><![CDATA[<span class="username">{@$author.coloredUsername}</span> ha vuelto.]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.broadcast.tooltip"><![CDATA[Difusión en todas las salas]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.color"><![CDATA[Tu color ha sido cambiado con éxito.]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.info.lastActivity"><![CDATA[Última actividad]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.info.suspensions"><![CDATA[Suspensiones activas]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.join"><![CDATA[<span class="username">{@$author.coloredUsername}</span> se ha unido.]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.join.plain"><![CDATA[{@$author.username} se ha unido.]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.leave"><![CDATA[<span class="username">{@$author.coloredUsername}</span> se ha ido.]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.leave.plain"><![CDATA[{@$author.username} ha salido.]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.team.tooltip"><![CDATA[Mensaje de equipo interno]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.temproomCreated"><![CDATA[La sala temporal “<a href="{$message.payload.room.link}">{$message.payload.room.title}</a>” se ha creado satisfactoriamente.]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.temproomInvited.invitee"><![CDATA[<span class="username">{@$author.coloredUsername}</span> te ha invitado a la sala temporal “<a href="{$message.payload.room.link}">{$message.payload.room.title}</a>”.]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.temproomInvited.invitor"><![CDATA[Has invitado a {$message.payload.recipientName} esta sala temporal.]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.where.lastAction"><![CDATA[Última acción]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.where.lastFetch"><![CDATA[Última búsqueda]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.where.room"><![CDATA[Sala]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.tombstone.message"><![CDATA[Este mensaje ha sido eliminado.]]></item>
+	</category>
+
+	<category name="chat.notification">
+		<item name="chat.notification.title"><![CDATA[Nuevo mensaje de chat de {$message.username}]]></item>
+	</category>
+
+	<category name="chat.page">
+		<item name="chat.page.copyright"><![CDATA[<a href="https://tims.bastelstu.be"{if EXTERNAL_LINK_TARGET_BLANK} rel="noopener noreferrer" target="_blank"{/if}>Tim’s Chat{if SHOW_VERSION_NUMBER} v{@$chatVersionNumber}{/if}</a>]]></item>
+	</category>
+
+	<category name="chat.room">
+		<item name="chat.room.button.autoscroll"><![CDATA[Desplazamiento automático]]></item>
+		<item name="chat.room.button.fullscreen"><![CDATA[Pantalla completa]]></item>
+		<item name="chat.room.button.leave"><![CDATA[Salir del chat]]></item>
+		<item name="chat.room.button.notifications"><![CDATA[Activar notificaciones]]></item>
+		<item name="chat.room.button.userList"><![CDATA[Mostrar lista de usuarios]]></item>
+		<item name="chat.room.button.roomList"><![CDATA[Mostrar lista de salas]]></item>
+		<item name="chat.room.userList"><![CDATA[Usuarios]]></item>
+		<item name="chat.room.userList.away"><![CDATA[Ausente{if $user.away}: {$user.away}{/if}]]></item>
+		<item name="chat.room.userList.moderator"><![CDATA[Moderador]]></item>
+		<item name="chat.room.userList.mute"><![CDATA[Silenciar]]></item>
+		<item name="chat.room.temporary.blueprint"><![CDATA[{assign var='number' value=1000|random_int:9999}Sala temporal #{$number} ({$user->username})]]></item>
+	</category>
+
+	<category name="chat.room.condition">
+		<item name="chat.room.condition.isFilled"><![CDATA[La sala no está vacía]]></item>
+	</category>
+
+	<category name="chat.stream">
+		<item name="chat.stream.activity"><![CDATA[New messages arrived, while automated scrolling is disabled.]]></item>
+		<item name="chat.stream.button.delete.sure"><![CDATA[¿Realmente quieres borrar el mensaje?]]></item>
+	</category>
+
+	<category name="chat.suspension">
+		<item name="chat.suspension.type"><![CDATA[Tipo]]></item>
+		<item name="chat.suspension.judge"><![CDATA[Juez]]></item>
+		<item name="chat.suspension.room"><![CDATA[Sala]]></item>
+
+		<item name="chat.suspension.type.be.bastelstu.chat.suspension.ban"><![CDATA[Baneo]]></item>
+		<item name="chat.suspension.type.be.bastelstu.chat.suspension.mute"><![CDATA[Silencio]]></item>
+
+		<item name="chat.suspension.message.new.be.bastelstu.chat.suspension.ban"><![CDATA[<span class="username">{@$author.coloredUsername}</span> ha baneado a <span class="username">{@$message.payload.target.username}</span>{if $message.payload.globally} globalmente{/if} {if $message.payload.suspension.expires === null}permanentemente{else}hasta el {$message.payload.suspension.formattedExpires}{/if}{if $message.payload.suspension.reason}: {$message.payload.suspension.reason}{else}.{/if}]]></item>
+		<item name="chat.suspension.message.new.be.bastelstu.chat.suspension.mute"><![CDATA[<span class="username">{@$author.coloredUsername}</span> ha silenciado a <span class="username">{@$message.payload.target.username}</span>{if $message.payload.globally} globalmente{/if} {if $message.payload.suspension.expires === null}permanentemente{else}hasta el {$message.payload.suspension.formattedExpires}{/if}{if $message.payload.suspension.reason}: {$message.payload.suspension.reason}{else}.{/if}]]></item>
+		<item name="chat.suspension.message.revoke.be.bastelstu.chat.suspension.ban"><![CDATA[<span class="username">{@$author.coloredUsername}</span> ha desbaneado a <span class="username">{@$message.payload.target.username}</span>{if $message.payload.globally} globalmente{/if}.]]></item>
+		<item name="chat.suspension.message.revoke.be.bastelstu.chat.suspension.mute"><![CDATA[<span class="username">{@$author.coloredUsername}</span> ha dejado de silenciar a <span class="username">{@$message.payload.target.username}</span>{if $message.payload.globally} globalmente{/if}.]]></item>
+		<item name="chat.suspension.info.be.bastelstu.chat.suspension.ban"><![CDATA[Estás baneado en esta sala de chat.]]></item>
+		<item name="chat.suspension.info.be.bastelstu.chat.suspension.mute"><![CDATA[Estás silenciado.]]></item>
+	</category>
+
+	<category name="chat.user">
+		<item name="chat.user.action.ban"><![CDATA[Banear]]></item>
+		<item name="chat.user.action.mute"><![CDATA[Silenciar]]></item>
+		<item name="chat.user.action.profile"><![CDATA[Perfil]]></item>
+		<item name="chat.user.action.whisper"><![CDATA[Susurrar]]></item>
+		<item name="chat.user.autoAway"><![CDATA[Ausencia automática]]></item>
+	</category>
+
+	<category name="wcf.acl.option">
+		<item name="wcf.acl.option.category.be.bastelstu.chat.room.user"><![CDATA[Permisos generales]]></item>
+		<item name="wcf.acl.option.be.bastelstu.chat.room.user.canSee"><![CDATA[Puede ver la sala]]></item>
+		<item name="wcf.acl.option.be.bastelstu.chat.room.user.canSeeLog"><![CDATA[Puede ver el registro]]></item>
+		<item name="wcf.acl.option.be.bastelstu.chat.room.user.canWrite"><![CDATA[Puede enviar mensajes]]></item>
+		<item name="wcf.acl.option.category.be.bastelstu.chat.room.mod"><![CDATA[Permisos de moderación]]></item>
+		<item name="wcf.acl.option.be.bastelstu.chat.room.mod.canBan"><![CDATA[Puede banear]]></item>
+		<item name="wcf.acl.option.be.bastelstu.chat.room.mod.canIgnoreBan"><![CDATA[Inmune a baneos]]></item>
+		<item name="wcf.acl.option.be.bastelstu.chat.room.mod.canIgnoreMute"><![CDATA[Inmune a silencios]]></item>
+		<item name="wcf.acl.option.be.bastelstu.chat.room.mod.canIgnoreUserLimit"><![CDATA[Exento de límite de usuarios]]></item>
+		<item name="wcf.acl.option.be.bastelstu.chat.room.mod.canMute"><![CDATA[Puede silenciar]]></item>
+	</category>
+
+	<category name="wcf.acp.box">
+		<item name="wcf.acp.box.boxController.be.bastelstu.chat.roomList"><![CDATA[Salas de chat]]></item>
+	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.admin.chat"><![CDATA[Chat]]></item>
+		<item name="wcf.acp.group.option.category.mod.chat"><![CDATA[Chat]]></item>
+		<item name="wcf.acp.group.option.category.user.chat"><![CDATA[Chat]]></item>
+
+		<item name="wcf.acp.group.option.admin.chat.canManageRoom"><![CDATA[Puede gestionar salas de chat]]></item>
+		<item name="wcf.acp.group.option.admin.chat.canManageSuspensions"><![CDATA[Puede gestionar suspensiones]]></item>
+		<item name="wcf.acp.group.option.admin.chat.canManageTriggers"><![CDATA[Puede gestionar comandos activadores]]></item>
+		<item name="wcf.acp.group.option.mod.chat.canBan"><![CDATA[Puede banear]]></item>
+		<item name="wcf.acp.group.option.mod.chat.canBan.description"><![CDATA[Nota: Si se concede este permiso, no se puede revocar en los permisos específicos de la sala.]]></item>
+		<item name="wcf.acp.group.option.mod.chat.canBroadcast"><![CDATA[Puede enviar difusiones]]></item>
+		<item name="wcf.acp.group.option.mod.chat.canDelete"><![CDATA[Puede eliminar mensajes]]></item>
+		<item name="wcf.acp.group.option.mod.chat.canIgnoreBan"><![CDATA[Inmune a baneos]]></item>
+		<item name="wcf.acp.group.option.mod.chat.canIgnoreMute"><![CDATA[Inmune a silencios]]></item>
+		<item name="wcf.acp.group.option.mod.chat.canIgnoreUserLimit"><![CDATA[Exento del límite de usuarios]]></item>
+		<item name="wcf.acp.group.option.mod.chat.canMute"><![CDATA[Puede silenciar]]></item>
+		<item name="wcf.acp.group.option.mod.chat.canMute.description"><![CDATA[Nota: Si se concede este permiso, no se puede revocar en los permisos específicos de la sala.]]></item>
+		<item name="wcf.acp.group.option.mod.chat.canTeam"><![CDATA[Puede utilizar mensajes internos de equipo]]></item>
+		<item name="wcf.acp.group.option.user.chat.canAttach"><![CDATA[Puede subir archivos adjuntos]]></item>
+		<item name="wcf.acp.group.option.user.chat.attachment.maxSize"><![CDATA[Tamaño máximo de archivos adjuntos]]></item>
+		<item name="wcf.acp.group.option.user.chat.attachment.allowedExtensions"><![CDATA[Extensiones de archivos adjuntos permitidas]]></item>
+		<item name="wcf.acp.group.option.user.chat.attachment.allowedExtensions.description"><![CDATA[Introduce una extensión por línea.]]></item>
+		<item name="wcf.acp.group.option.user.chat.canSee"><![CDATA[Puede ver salas de chat]]></item>
+		<item name="wcf.acp.group.option.user.chat.canSeeLog"><![CDATA[Puede ver registros de chats]]></item>
+		<item name="wcf.acp.group.option.user.chat.canSetColor"><![CDATA[Puede colorear su nombre]]></item>
+		<item name="wcf.acp.group.option.user.chat.canTemproom"><![CDATA[Puede crear salas temporales]]></item>
+		<item name="wcf.acp.group.option.user.chat.canWrite"><![CDATA[Puede enviar mensajes a salas de chat]]></item>
+		<item name="wcf.acp.group.option.user.chat.disallowedBBCodes"><![CDATA[BBCodes no permitidos]]></item>
+		<item name="wcf.acp.group.option.user.chat.disallowedBBCodes.description"><![CDATA[Los BBCodes seleccionados <em>no pueden</em> ser utilizados por los usuarios de este grupo de usuarios.]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.chat"><![CDATA[Chat]]></item>
+		<item name="wcf.acp.option.category.chat.general"><![CDATA[General]]></item>
+
+		<item name="wcf.acp.option.chat_archive_after"><![CDATA[Archivar después]]></item>
+		<item name="wcf.acp.option.chat_archive_after.description"><![CDATA[Los mensajes se consideran archivados tras este tiempo y ya no están disponibles en el flujo normal de mensajes.]]></item>
+		<item name="wcf.acp.option.chat_autoawaytime"><![CDATA[Ausencia automática]]></item>
+		<item name="wcf.acp.option.chat_autoawaytime.description"><![CDATA[Especifica el tiempo que tarda un usuario en ser marcado como ausente automáticamente. Utiliza 0 para desactivar.]]></item>
+		<item name="wcf.acp.option.chat_log_archivetime"><![CDATA[Antigüedad máxima de los mensajes]]></item>
+		<item name="wcf.acp.option.chat_log_archivetime.description"><![CDATA[Los mensajes se eliminan de la base de datos en ese momento. Utiliza 0 para desactivar.]]></item>
+		<item name="wcf.acp.option.chat_max_length"><![CDATA[Longitud máxima de los mensajes]]></item>
+		<item name="wcf.acp.option.chat_reloadtime"><![CDATA[Intervalo de recarga]]></item>
+		<item name="wcf.acp.option.chat_reloadtime.description"><![CDATA[Especifica cuánto tiempo espera el chat entre dos intentos de llamar al servidor en busca de nuevos mensajes. No se aplica si se utiliza un servicio push.]]></item>
+	</category>
+
+	<category name="wcf.page">
+		<item name="wcf.page.onlineLocation.be.bastelstu.chat.Log"><![CDATA[Registro de chat (<a href="{$room->getLink()}">{$room}</a>)]]></item>
+		<item name="wcf.page.onlineLocation.be.bastelstu.chat.Room"><![CDATA[Sala de chat <a href="{$room->getLink()}">{$room}</a>]]></item>
+		<item name="wcf.page.pageObjectID.be.bastelstu.chat.Room"><![CDATA[ID de la sala]]></item>
+		<item name="wcf.page.pageObjectID.search.be.bastelstu.chat.Room"><![CDATA[Buscar títulos de salas]]></item>
+	</category>
+
+	<category name="wcf.user">
+		<item name="wcf.user.activityPoint.objectType.be.bastelstu.chat.activityPointEvent.join"><![CDATA[Ingresos a chats]]></item>
+		<item name="wcf.user.activityPoint.objectType.be.bastelstu.chat.activityPointEvent.message"><![CDATA[Mensajes de chat]]></item>
+	</category>
+</import>
+</language>
