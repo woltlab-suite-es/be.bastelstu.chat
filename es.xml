@@ -22,7 +22,7 @@
 
 		<item name="chat.acp.room.topic"><![CDATA[Tema]]></item>
 		<item name="chat.acp.room.topic.error.tooLong"><![CDATA[El tema es demasiado largo.]]></item>
-		<item name="chat.acp.room.topicUseHtml"><![CDATA[Habilitar código HTML en el tema]]></item>
+		<item name="chat.acp.room.topicUseHtml"><![CDATA[Activar código HTML en el tema]]></item>
 		<item name="chat.acp.room.userLimit"><![CDATA[Límite de usuarios]]></item>
 	</category>
 
