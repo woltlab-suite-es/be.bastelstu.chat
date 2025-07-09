@@ -1,5 +1,5 @@
 # Tim’s Chat en Español
-Idioma español para **Tim’s Chat** desarrollado por Tim Düsterhus y Maximilian Mader.
+Idioma español para **Tim’s Chat** desarrollado por [Tim Düsterhus](https://github.com/timwolla) y [Maximilian Mader](https://github.com/max-m).
 
 ### Licencia
 Traducción realizada por [Aethior](https://github.com/aethior) (aethior en gmail.com).
