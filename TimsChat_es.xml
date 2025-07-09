@@ -94,7 +94,7 @@
 		<item name="chat.messageType.be.bastelstu.chat.messageType.away.title"><![CDATA[Este usuario está ausente]]></item>
 		<item name="chat.messageType.be.bastelstu.chat.messageType.back"><![CDATA[<span class="username">{@$author.coloredUsername}</span> ha vuelto.]]></item>
 		<item name="chat.messageType.be.bastelstu.chat.messageType.broadcast.tooltip"><![CDATA[Difusión en todas las salas]]></item>
-		<item name="chat.messageType.be.bastelstu.chat.messageType.color"><![CDATA[Tu color ha sido cambiado con éxito.]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.color"><![CDATA[Tu color ha sido cambiado correctamente.]]></item>
 		<item name="chat.messageType.be.bastelstu.chat.messageType.info.lastActivity"><![CDATA[Última actividad]]></item>
 		<item name="chat.messageType.be.bastelstu.chat.messageType.info.suspensions"><![CDATA[Suspensiones activas]]></item>
 		<item name="chat.messageType.be.bastelstu.chat.messageType.join"><![CDATA[<span class="username">{@$author.coloredUsername}</span> se ha unido.]]></item>
@@ -102,7 +102,7 @@
 		<item name="chat.messageType.be.bastelstu.chat.messageType.leave"><![CDATA[<span class="username">{@$author.coloredUsername}</span> se ha ido.]]></item>
 		<item name="chat.messageType.be.bastelstu.chat.messageType.leave.plain"><![CDATA[{@$author.username} ha salido.]]></item>
 		<item name="chat.messageType.be.bastelstu.chat.messageType.team.tooltip"><![CDATA[Mensaje de equipo interno]]></item>
-		<item name="chat.messageType.be.bastelstu.chat.messageType.temproomCreated"><![CDATA[La sala temporal “<a href="{$message.payload.room.link}">{$message.payload.room.title}</a>” se ha creado satisfactoriamente.]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.temproomCreated"><![CDATA[La sala temporal “<a href="{$message.payload.room.link}">{$message.payload.room.title}</a>” se ha creado correctamente.]]></item>
 		<item name="chat.messageType.be.bastelstu.chat.messageType.temproomInvited.invitee"><![CDATA[<span class="username">{@$author.coloredUsername}</span> te ha invitado a la sala temporal “<a href="{$message.payload.room.link}">{$message.payload.room.title}</a>”.]]></item>
 		<item name="chat.messageType.be.bastelstu.chat.messageType.temproomInvited.invitor"><![CDATA[Has invitado a {$message.payload.recipientName} esta sala temporal.]]></item>
 		<item name="chat.messageType.be.bastelstu.chat.messageType.where.lastAction"><![CDATA[Última acción]]></item>
