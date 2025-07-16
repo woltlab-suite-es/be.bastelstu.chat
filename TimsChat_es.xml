@@ -138,7 +138,7 @@
 	</category>
 
 	<category name="chat.stream">
-		<item name="chat.stream.activity"><![CDATA[New messages arrived, while automated scrolling is disabled.]]></item>
+		<item name="chat.stream.activity"><![CDATA[Han llegado nuevos mensajes, pero el desplazamiento automático está desactivado.]]></item>
 		<item name="chat.stream.button.delete.sure"><![CDATA[¿Realmente quieres borrar el mensaje?]]></item>
 	</category>
 
