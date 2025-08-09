@@ -104,7 +104,7 @@
 		<item name="chat.messageType.be.bastelstu.chat.messageType.team.tooltip"><![CDATA[Mensaje de equipo interno]]></item>
 		<item name="chat.messageType.be.bastelstu.chat.messageType.temproomCreated"><![CDATA[La sala temporal “<a href="{$message.payload.room.link}">{$message.payload.room.title}</a>” se ha creado correctamente.]]></item>
 		<item name="chat.messageType.be.bastelstu.chat.messageType.temproomInvited.invitee"><![CDATA[<span class="username">{@$author.coloredUsername}</span> te ha invitado a la sala temporal “<a href="{$message.payload.room.link}">{$message.payload.room.title}</a>”.]]></item>
-		<item name="chat.messageType.be.bastelstu.chat.messageType.temproomInvited.invitor"><![CDATA[Has invitado a {$message.payload.recipientName} esta sala temporal.]]></item>
+		<item name="chat.messageType.be.bastelstu.chat.messageType.temproomInvited.invitor"><![CDATA[Has invitado a {$message.payload.recipientName} a esta sala temporal.]]></item>
 		<item name="chat.messageType.be.bastelstu.chat.messageType.where.lastAction"><![CDATA[Última acción]]></item>
 		<item name="chat.messageType.be.bastelstu.chat.messageType.where.lastFetch"><![CDATA[Última búsqueda]]></item>
 		<item name="chat.messageType.be.bastelstu.chat.messageType.where.room"><![CDATA[Sala]]></item>
